@@ -14,7 +14,194 @@
     </a>
   </div>
 </nav>
- </div> 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<div>
+   <style>
+    .btn {
+      font-size: 20px;       /* tamaño del texto */
+      padding: 12px 24px;    /* alto y ancho del botón */
+      border-radius: 10px;   /* bordes redondeados */
+    }
+
+    .dropdown-menu {
+      font-size: 18px;
+      padding: 10px;
+      min-width: 200px;
+    } 
+
+    .dropdown-item {
+      padding: 12px 18px;
+    }
+
+    .botonera {
+      margin-top: 40px; /* cambia a 60px si quieres más espacio */
+       margin-bottom: 100px; /* 👈 aumenta la separación hacia abajo */
+    }
+
+ .boton-imagen {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  display: block;
+}
+
+.boton-imagen img {
+  width: 100%;
+  height: 220px; /* 👈 Aumenta el alto */
+  object-fit: cover; /* Mantiene proporciones sin deformar */
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto hover */
+.boton-imagen:hover img {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón azul debajo */
+.boton-texto {
+  display: block;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0;
+  margin-top: 10px;
+  box-shadow: 3px 5px 0px rgba(0, 91, 187, 0.4);
+  transition: all 0.3s ease;
+}
+
+.boton-texto:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 4px 7px 0px rgba(0, 91, 187, 0.4);
+}
+
+/* 📐 Mantiene proporción y orden de cuadrícula */
+.row.justify-content-center > .col-md-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  </style>
+</head>
+
+<body>
+ <div>
+
+  <!-- CARRUSEL -->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="Panoramica_Itagüí.jpg" class="d-block w-100" alt="..." style="height: 750px; object-fit: cover; object-position: center;">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="A3TKBFPUERF33A44G3UKCTLUOA.avif" class="d-block w-100" alt="..." style="height: 750px; object-fit: cover; object-position: center;">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="entrecote.jpg" class="d-block w-100" alt="..." style="height: 750px; object-fit: cover; object-position: center;">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="BANNERS-MUNICIPIOS-ITAGUI.jpg" class="d-block w-100" alt="..." style="height: 750px; object-fit: cover; object-position: center;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- 🔹 Aquí agregamos la clase .botonera -->
+  <div class="container text-center botonera">
+    <div class="row align-items-center">
+      <div class="col">
+        <button type="button" class="btn btn-primary btn-lg">Noticias</button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Deportes
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Individuales</a></li>
+          <li><a class="dropdown-item" href="#">En equipo</a></li>
+          <li><a class="dropdown-item" href="#">De contacto</a></li>
+          <li><a class="dropdown-item" href="#">Discapacitados</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Festividades
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Conciertos</a></li>
+          <li><a class="dropdown-item" href="#">Carnavales</a></li>
+          <li><a class="dropdown-item" href="#">Ferias</a></li>
+          <li><a class="dropdown-item" href="#">Semana del artista</a></li>
+          <li><a class="dropdown-item" href="#">Festival de música</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Gastronomía
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Postres y dulces</a></li>
+          <li><a class="dropdown-item" href="#">Bebidas</a></li>
+          <li><a class="dropdown-item" href="#">Mercados</a></li>
+          <li><a class="dropdown-item" href="#">Lugares para comer</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-primary btn-lg">Sobre Itagüí</button>
+      </div>
+    </div>
+
+<div class="container text-center mt-5">
+  <div class="row justify-content-center">
+
+    <!-- Imagen 1 -->
+    <div class="col-md-3 col-sm-6 mb-4">
+      <button class="boton-imagen" onclick="location.href='eventos.html'">
+        <img src="Gratis-y-sin-reclamar-boleta-Asi-puede-asistir-a-los-conciertos-de-las-fiestas-de-Itagui-2.jpeg" alt="Eventos recientes">
+      </button>
+      <button class="boton-texto" onclick="location.href='eventos.html'">
+        Eventos recientes
+      </button>
+    </div>
+
+    <!-- Imagen 2 -->
+    <div class="col-md-3 col-sm-6 mb-4">
+      <button class="boton-imagen" onclick="location.href='competencias.html'">
+        <img src="4-Baloncesto.jpg" alt="Competencias">
+      </button>
+      <button class="boton-texto" onclick="location.href='competencias.html'">
+        Competencias
+      </button>
+    </div>
+
+    <!-- Imagen 3 -->
+    <div class="col-md-3 col-sm-6 mb-4">
+      <button class="boton-imagen" onclick="location.href='comida.html'">
+        <img src="Prinicipe.jpg" alt="Comida">
+      </button>
+      <button class="boton-texto" onclick="location.href='comida.html'">
+        Comida
+      </button>
+    </div>
+</div>
+
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
