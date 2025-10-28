@@ -7,7 +7,15 @@
   <meta charset="UTF-8" />
   <title>Mi plan itagui</title>
 </head>
+<Style>
+ .dropdown-menu {
+  background-color: #FFB107;
+ }
+ .dropdown-item{
+  color: aliceblue;
 
+ }
+</Style>
 <body>
   <div>
     <div class="container">
@@ -22,7 +30,9 @@
               <img src="gear.svg" alt="" width="80" height="80">
             </button>
             <ul class="dropdown-menu">
-              <!-- Dropdown menu links -->
+              <li><a class="dropdown-item" href="#">Tamaño de letras</a></li>
+              <li><a class="dropdown-item" href="#">Subtitulos</a></li>
+              <li><a class="dropdown-item" href="https://itagui.gov.co/">Pagina principal</a></li>
             </ul>
         </div>
         <div class="col">
@@ -31,12 +41,13 @@
           </form>
         </div>
         <div class="col">
-          <a class="btn-group dropstart">
             <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="hamburguer.svg" alt="" height="80" width="80">
+              <img src="hamburguer.svg" alt="" width="80" height="80">
             </button>
-            <ul class="dropdown-menu">
-              <!-- Dropdown menu links -->
+            <ul class="dropdown-menu" >
+              <li><a class="dropdown-item" href="#">Hoteles</a></li>
+              <li><a class="dropdown-item" href="#">Alcaldia</a></li>
+              <li><a class="dropdown-item" href="#">Quienes somos</a></li>
             </ul>
         </div>
       </div>
