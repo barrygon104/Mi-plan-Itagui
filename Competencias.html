@@ -152,17 +152,10 @@
     .dropdown-item {
       color: #ffffff;
     }
-    .header-top {
+     .header-top {
         background-color: #00529F;
     }
-        .container-imagen {
-      width: 100vw;
-      height: 75vh; /* altura responsive relativa a viewport */
-      object-fit: cover;
-      object-position: center;
-      display: block;
-    }
-
+    
   </style>
 </head>
 
@@ -173,11 +166,12 @@
       <div class="row align-items-center">
         <div class="col-auto">
           <a class="navbar-brand" href="Index.html">
-            <img src="logo blanco final.svg" alt="logo" width="80" height="70">
+            <img src="logo final.svg" alt="logo" width="80" height="80">
           </a>
         </div>
+
         <div class="col">
-          <form class="d-flex" role="search">
+          <form class="d-flex" role="search">Panoramica_Itagüí.jpg
             <input class="form-control me-2" type="search" placeholder="🔍️Search" aria-label="Search" />
           </form>
         </div>
@@ -185,14 +179,12 @@
         <div class="col-auto">
           <div class="dropdown">
             <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="hamburguer 2.svg" alt="menu" width="48" height="48">
+              <img src="hamburguer.svg" alt="menu" width="48" height="48">
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Conciertos</a></li>
-              <li><a class="dropdown-item" href="#">Carnavales</a></li>
-              <li><a class="dropdown-item" href="#">Ferias</a></li>
-                <li><a class="dropdown-item" href="#">Semana del artista</a></li>
-              <li><a class="dropdown-item" href="#">Festival de musica</a></li>
+              <li><a class="dropdown-item" href="#">Hoteles</a></li>
+              <li><a class="dropdown-item" href="#">Alcaldía</a></li>
+              <li><a class="dropdown-item" href="#">Quiénes somos</a></li>
             </ul>
           </div>
         </div>
@@ -200,13 +192,26 @@
     </div>
   </header>
 
-  <div class="container-imagen">
-  <div class="container text-center">
+  <!-- CARRUSEL — full width (sin container) -->
+  <section class="container" width="3200" height="600">
     <div>
-      <img src="4-Baloncesto.jpg" alt="" width="1320" height="600">
+      <div class="carousel-inner">
+        <div class="col">
+          <img src="Panoramica_Itagüí.jpg" alt="" width="1320" height="600">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
     </div>
-    <div class="row align-items-center">
-  </div>        
+  </section>
+
   <!-- BOTONERA PRINCIPAL (dentro de container) -->
   <div class="container text-center botonera">
     <div class="row align-items-center">
@@ -279,7 +284,7 @@
         <button class="boton-imagen" onclick="location.href='competencias.html'">
           <img src="4-Baloncesto.jpg" alt="Competencias">
         </button>
-        <button class="boton-texto" onclick="location.href='Eventos'">Competencias</button>
+        <button class="boton-texto" onclick="location.href='Eventos.html'">Competencias</button>
       </div>
 
       <div class="col-md-3 col-sm-6 mb-4">
