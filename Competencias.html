@@ -182,9 +182,10 @@
               <img src="hamburguer.svg" alt="menu" width="48" height="48">
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Hoteles</a></li>
-              <li><a class="dropdown-item" href="#">Alcaldía</a></li>
-              <li><a class="dropdown-item" href="#">Quiénes somos</a></li>
+              <li><a class="dropdown-item" href="#">Individuales</a></li>
+              <li><a class="dropdown-item" href="#">En equipo</a></li>
+              <li><a class="dropdown-item" href="#">De contacto</a></li>
+              <li><a class="dropdown-item" href="#">Discapacitados</a></li>
             </ul>
           </div>
         </div>
@@ -211,62 +212,25 @@
       </button>
     </div>
   </section>
-
-  <!-- BOTONERA PRINCIPAL (dentro de container) -->
-  <div class="container text-center botonera">
-    <div class="row align-items-center">
-      <div class="col">
-        <button type="button" class="btn btn-primary btn-lg">Noticias Itagüí</button>
-      </div>
-
-      <div class="col">
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Deportes
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Individuales</a></li>
-            <li><a class="dropdown-item" href="#">En equipo</a></li>
-            <li><a class="dropdown-item" href="#">De contacto</a></li>
-            <li><a class="dropdown-item" href="#">Discapacitados</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Festividades
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Conciertos</a></li>
-            <li><a class="dropdown-item" href="#">Carnavales</a></li>
-            <li><a class="dropdown-item" href="#">Ferias</a></li>
-            <li><a class="dropdown-item" href="#">Semana del artista</a></li>
-            <li><a class="dropdown-item" href="#">Festival de música</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Gastronomía
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Postres y dulces</a></li>
-            <li><a class="dropdown-item" href="#">Bebidas</a></li>
-            <li><a class="dropdown-item" href="#">Mercados</a></li>
-            <li><a class="dropdown-item" href="#">Lugares para comer</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col">
-        <a type="button" class="btn btn-primary btn-lg" href="https://itagui.gov.co/anuarioitagui/historia.html">Sobre Itagüí</a>
-
-      </div>
+  
+  <div>
+    <div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+         <button class="boton-imagen" onclick="location.href='eventos.html'" height="70" width="70">
+          <img src="dembele.svg" alt="Eventos recientes" height="70" width="70">
+        </button>
     </div>
+    <div class="col">
+      <button class="boton-texto" onclick="location.href='eventos.html'">Deportes En Equipo
+    </div>
+    <div class="col">
+         <button class="boton-imagen" onclick="location.href='eventos.html'">
+          <img src="vitinha.svg" alt="Eventos recientes">
+        </button>
+    </div>
+  </div>
+ </div>
   </div>
 
   <!-- BLOQUE DE IMÁGENES (cards) -->
@@ -295,6 +259,27 @@
       </div>
 
     </div>
+       
+       <!-- BLOQUE DE IMÁGENES (cards) -->
+  <div class="container text-center mt-5">
+    <div class="row justify-content-center">
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <button class="boton-imagen" onclick="location.href='eventos.html'">
+          <img src="Gratis-y-sin-reclamar-boleta-Asi-puede-asistir-a-los-conciertos-de-las-fiestas-de-Itagui-2.jpeg" alt="Eventos recientes">
+        </button>
+        <button class="boton-texto" onclick="location.href='eventos.html'">Eventos recientes</button>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <button class="boton-imagen" onclick="location.href='competencias.html'">
+          <img src="4-Baloncesto.jpg" alt="Competencias">
+        </button>
+        <button class="boton-texto" onclick="location.href='Eventos.html'">Competencias</button>
+      </div>
+
+    </div>
+    
   </div>
 
   <!-- Bootstrap JS -->

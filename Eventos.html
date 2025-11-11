@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <title>Mi plan Itagüí</title>
@@ -14,6 +15,7 @@
     .dropdown-menu.custom-yellow {
       background-color: #FFB107;
     }
+
     .dropdown-menu.custom-yellow .dropdown-item {
       color: aliceblue;
     }
@@ -85,42 +87,18 @@
       box-shadow: 4px 7px 0px rgba(0, 91, 187, 0.4);
     }
 
-    .row.justify-content-center > .col-md-3 {
+    .row.justify-content-center>.col-md-3 {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-
-    /* ---------- CORRECCIÓN CARRUSEL FULL WIDTH ---------- */
-    /* Contenedor que hace el carousel full-bleed */
-    .carousel-full {
-      position: relative;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
-      width: 100vw;
-      overflow: hidden;
-      z-index: 0;
-    }
-
-    .carousel-full .carousel-inner .carousel-item img {
-      width: 100vw;
-      height: 75vh; /* altura responsive relativa a viewport */
-      object-fit: cover;
-      object-position: center;
-      display: block;
-    }
-
-    /* Cuando se quiera una altura fija (alternativa):
-    .carousel-full .carousel-inner .carousel-item img { height: 750px; }
-    */
 
     /* Ajustes responsive para las imágenes y la cuadrícula */
     @media (max-width: 992px) {
       .boton-imagen img {
         height: 240px;
       }
+
       .carousel-full .carousel-inner .carousel-item img {
         height: 55vh;
       }
@@ -130,6 +108,7 @@
       .boton-imagen img {
         height: 200px;
       }
+
       .carousel-full .carousel-inner .carousel-item img {
         height: 45vh;
       }
@@ -152,15 +131,9 @@
     .dropdown-item {
       color: #ffffff;
     }
+
     .header-top {
-        background-color: #00529F;
-    }
-        .container-imagen {
-      width: 100vw;
-      height: 75vh; /* altura responsive relativa a viewport */
-      object-fit: cover;
-      object-position: center;
-      display: block;
+      background-color: #00529F;
     }
 
   </style>
@@ -169,7 +142,7 @@
 <body>
   <!-- HEADER (logo, búsqueda, menús) dentro de un container normal -->
   <header class="header-top">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row align-items-center">
         <div class="col-auto">
           <a class="navbar-brand" href="Index.html">
@@ -191,7 +164,7 @@
               <li><a class="dropdown-item" href="#">Conciertos</a></li>
               <li><a class="dropdown-item" href="#">Carnavales</a></li>
               <li><a class="dropdown-item" href="#">Ferias</a></li>
-                <li><a class="dropdown-item" href="#">Semana del artista</a></li>
+              <li><a class="dropdown-item" href="#">Semana del artista</a></li>
               <li><a class="dropdown-item" href="#">Festival de musica</a></li>
             </ul>
           </div>
@@ -200,101 +173,108 @@
     </div>
   </header>
 
-  <div class="container-imagen">
-  <div class="container text-center">
+<header>
+  <div class="container-fluid" style="width: 100%;">
     <div>
-      <img src="4-Baloncesto.jpg" alt="" width="1320" height="600">
+      <img src="4-Baloncesto.jpg" class="img-fluid">
     </div>
     <div class="row align-items-center">
-  </div>        
-  <!-- BOTONERA PRINCIPAL (dentro de container) -->
-  <div class="container text-center botonera">
-    <div class="row align-items-center">
-      <div class="col">
-        <button type="button" class="btn btn-primary btn-lg">Noticias Itagüí</button>
-      </div>
-
-      <div class="col">
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Deportes
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Individuales</a></li>
-            <li><a class="dropdown-item" href="#">En equipo</a></li>
-            <li><a class="dropdown-item" href="#">De contacto</a></li>
-            <li><a class="dropdown-item" href="#">Discapacitados</a></li>
-          </ul>
+    </div>
+    <!-- BOTONERA PRINCIPAL (dentro de container) -->
+    <div class="container text-center botonera">
+      <div class="row align-items-center">
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-lg">Noticias Itagüí</button>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Festividades
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Conciertos</a></li>
-            <li><a class="dropdown-item" href="#">Carnavales</a></li>
-            <li><a class="dropdown-item" href="#">Ferias</a></li>
-            <li><a class="dropdown-item" href="#">Semana del artista</a></li>
-            <li><a class="dropdown-item" href="#">Festival de música</a></li>
-          </ul>
+        <div class="col">
+          <div class="dropdown">
+            <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Deportes
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Individuales</a></li>
+              <li><a class="dropdown-item" href="#">En equipo</a></li>
+              <li><a class="dropdown-item" href="#">De contacto</a></li>
+              <li><a class="dropdown-item" href="#">Discapacitados</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Gastronomía
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Postres y dulces</a></li>
-            <li><a class="dropdown-item" href="#">Bebidas</a></li>
-            <li><a class="dropdown-item" href="#">Mercados</a></li>
-            <li><a class="dropdown-item" href="#">Lugares para comer</a></li>
-          </ul>
+        <div class="col">
+          <div class="dropdown">
+            <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Festividades
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Conciertos</a></li>
+              <li><a class="dropdown-item" href="#">Carnavales</a></li>
+              <li><a class="dropdown-item" href="#">Ferias</a></li>
+              <li><a class="dropdown-item" href="#">Semana del artista</a></li>
+              <li><a class="dropdown-item" href="#">Festival de música</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="col">
-        <a type="button" class="btn btn-primary btn-lg" href="https://itagui.gov.co/anuarioitagui/historia.html">Sobre Itagüí</a>
+        <div class="col">
+          <div class="dropdown">
+            <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Gastronomía
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Postres y dulces</a></li>
+              <li><a class="dropdown-item" href="#">Bebidas</a></li>
+              <li><a class="dropdown-item" href="#">Mercados</a></li>
+              <li><a class="dropdown-item" href="#">Lugares para comer</a></li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="col">
+          <a type="button" class="btn btn-primary btn-lg" href="https://itagui.gov.co/anuarioitagui/historia.html">Sobre
+            Itagüí</a>
+
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- BLOQUE DE IMÁGENES (cards) -->
-  <div class="container text-center mt-5">
-    <div class="row justify-content-center">
+    <!-- BLOQUE DE IMÁGENES (cards) -->
+    <div class="container text-center mt-5">
+      <div class="row justify-content-center">
 
-      <div class="col-md-3 col-sm-6 mb-4">
-        <button class="boton-imagen" onclick="location.href='eventos.html'">
-          <img src="Gratis-y-sin-reclamar-boleta-Asi-puede-asistir-a-los-conciertos-de-las-fiestas-de-Itagui-2.jpeg" alt="Eventos recientes">
-        </button>
-        <button class="boton-texto" onclick="location.href='eventos.html'">Eventos recientes</button>
-      </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <button class="boton-imagen" onclick="location.href='eventos.html'">
+            <img src="Gratis-y-sin-reclamar-boleta-Asi-puede-asistir-a-los-conciertos-de-las-fiestas-de-Itagui-2.jpeg"
+              alt="Eventos recientes">
+          </button>
+          <button class="boton-texto" onclick="location.href='eventos.html'">Eventos recientes</button>
+        </div>
 
-      <div class="col-md-3 col-sm-6 mb-4">
-        <button class="boton-imagen" onclick="location.href='competencias.html'">
-          <img src="4-Baloncesto.jpg" alt="Competencias">
-        </button>
-        <button class="boton-texto" onclick="location.href='Eventos'">Competencias</button>
-      </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <button class="boton-imagen" onclick="location.href='competencias.html'">
+            <img src="4-Baloncesto.jpg" alt="Competencias">
+          </button>
+          <button class="boton-texto" onclick="location.href='Eventos'">Competencias</button>
+        </div>
 
-      <div class="col-md-3 col-sm-6 mb-4">
-        <button class="boton-imagen" onclick="location.href='https://www.rappi.com.co/restaurantes/900388036-bombones-de-pollo-el-principe'">
-          <img src="Prinicipe.jpg" alt="Comida">
-        </button>
-        <button class="boton-texto" onclick="location.href='https://www.rappi.com.co/restaurantes/900388036-bombones-de-pollo-el-principe'">Comida</button>
-      </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <button class="boton-imagen"
+            onclick="location.href='https://www.rappi.com.co/restaurantes/900388036-bombones-de-pollo-el-principe'">
+            <img src="Prinicipe.jpg" alt="Comida">
+          </button>
+          <button class="boton-texto"
+            onclick="location.href='https://www.rappi.com.co/restaurantes/900388036-bombones-de-pollo-el-principe'">Comida</button>
+        </div>
+      </div> 
+    </header>
 
-    </div>
-  </div>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
