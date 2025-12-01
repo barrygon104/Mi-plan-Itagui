@@ -35,13 +35,8 @@
 
     .dropdown-item {
       padding: 12px 18px;
-    }
-
-    .botonera {
-      margin-top: 40px;
-      margin-bottom: 60px;
-    }
-
+    } 
+    
     /* Bloque de imagenes (cards) */
     .boton-imagen {
       background: none;
@@ -106,6 +101,14 @@
       background-color: #00529F;
     }
 
+    
+  .header-img img {
+ width: 100%;
+ height: 470px;
+ display: block;
+ margin: 0x auto;
+}
+
   </style>
 </head>
 
@@ -143,102 +146,26 @@
     </div>
   </header>
 
-   <header>
+   <header class="header-img mt-4 mb-5">
     <div>
       <img src="festival 1.png">
     </div>
   </header>
+    <img class="position-relative mt-0 mb-0" style="left: 15rem; bottom: 15rem;" src="evento 1.png" width="600px">
   
-    <!-- BOTONERA PRINCIPAL (dentro de container) -->
-    <div class="container text-center botonera">
-      <div class="row align-items-center">
-        <div class="col">
-          <button type="button" class="btn btn-primary btn-lg">Noticias Itagüí</button>
-        </div>
-
-        <div class="col">
-          <div class="dropdown">
-            <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Deportes
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Individuales</a></li>
-              <li><a class="dropdown-item" href="#">En equipo</a></li>
-              <li><a class="dropdown-item" href="#">De contacto</a></li>
-              <li><a class="dropdown-item" href="#">Discapacitados</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="dropdown">
-            <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Festividades
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Conciertos</a></li>
-              <li><a class="dropdown-item" href="#">Carnavales</a></li>
-              <li><a class="dropdown-item" href="#">Ferias</a></li>
-              <li><a class="dropdown-item" href="#">Semana del artista</a></li>
-              <li><a class="dropdown-item" href="#">Festival de música</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="dropdown">
-            <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Gastronomía
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Postres y dulces</a></li>
-              <li><a class="dropdown-item" href="#">Bebidas</a></li>
-              <li><a class="dropdown-item" href="#">Mercados</a></li>
-              <li><a class="dropdown-item" href="#">Lugares para comer</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col">
-          <a type="button" class="btn btn-primary btn-lg" href="https://itagui.gov.co/anuarioitagui/historia.html">Sobre
-            Itagüí</a>
-
-        </div>
-      </div>
+    <!-- columnas -->
+ 
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+      One of three columns
     </div>
-
-    <!-- BLOQUE DE IMÁGENES (cards) -->
-    <div class="container text-center mt-5">
-      <div class="row justify-content-center">
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <button class="boton-imagen" onclick="location.href='eventos.html'">
-            <img src="Gratis-y-sin-reclamar-boleta-Asi-puede-asistir-a-los-conciertos-de-las-fiestas-de-Itagui-2.jpeg"
-              alt="Eventos recientes">
-          </button>
-          <button class="boton-texto" onclick="location.href='eventos.html'">Eventos recientes</button>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <button class="boton-imagen" onclick="location.href='competencias.html'">
-            <img src="4-Baloncesto.jpg" alt="Competencias">
-          </button>
-          <button class="boton-texto" onclick="location.href='Eventos'">Competencias</button>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <button class="boton-imagen"
-            onclick="location.href='https://www.rappi.com.co/restaurantes/900388036-bombones-de-pollo-el-principe'">
-            <img src="Prinicipe.jpg" alt="Comida">
-          </button>
-          <button class="boton-texto"
-            onclick="location.href='https://www.rappi.com.co/restaurantes/900388036-bombones-de-pollo-el-principe'">Comida</button>
-        </div>
-      </div> 
-    </header>
+    <div class="col">
+      <p class="fs-1" style="color: #00529F;">Conciertos en Itagüí</p>
+        <p class="fs-5">Itagüí se ha consolidado como un epicentro musical del Valle de Aburrá, acogiendo conciertos que reúnen a miles de personas en espacios públicos llenos de vida, arte y cultura. Con una programación diversa que incluye artistas locales, nacionales e internacionales, los conciertos en Itagüí son una celebración de la música y la identidad cultural del municipio. ¡Vive la emoción de cada presentación y sé parte del ritmo que mueve nuestra ciudad!</p>
+    </div>
+  </div>
+</div>
 
       <!-- Bootstrap JS -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
