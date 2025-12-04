@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muestra de Producto Único</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+
+/* Variables para facilitar el cambio de color */
+:root {
+    --primary-color: #0084C7; /* Azul fuerte para fondo y énfasis */
+    --accent-color: #FFB107; /* Amarillo vibrante para acentos */
+    --text-dark: #333;
+    --text-light: #f4f4f4;
+    --background-light: #ffffff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* --- Cabecera (Header) --- */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* --- Contenido Principal (Main) --- */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.product-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-info h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.product-visual img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-info ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.product-info li {
+    background-color: #f0f8ff; /* Azul claro sutil */
+    margin-bottom: 8px;
+    padding: 10px;
+    border-left: 5px solid var(--accent-color);
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* --- Llamada a la Acción (CTA) --- */
+.cta-section {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+.cta-section h3 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: var(--accent-color); /* Título en amarillo */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--primary-color); /* Texto del botón en azul */
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 0 var(--primary-color); /* Sombra 3D */
+}
+
+.cta-button:hover {
+    background-color: #ffd666; /* Un tono más claro de amarillo */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 var(--primary-color);
+}
+
+/* --- Pie de Página (Footer) --- */
+footer {
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+.header-top {
+    background-color: #00529F;
+    padding: 10px 0;
+
+}
+    </style>
+</head>
+<body>
+<header class="header-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <a class="navbar-brand" href="Index.html">
+            <img src="logo blanco final.svg" alt="logo" width="80" height="80">
+          </a>
+        </div>
+
+        <div class="col">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="🔍️Search" aria-label="Search" />
+          </form>
+        </div>
+
+        <div class="col-auto">
+          <div class="dropdown">
+            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="hamburguer 2.svg" alt="menu" width="48" height="48">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Individuales</a></li>
+              <li><a class="dropdown-item" href="#">En equipo</a></li>
+              <li><a class="dropdown-item" href="#">De contacto</a></li>
+              <li><a class="dropdown-item" href="#">Discapacitados</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <main>
+        <section class="product-info">
+            <h2>El jardin coffe shop</h2>
+            <div class="product-visual">
+                <img src="bebidas 1.jpg" alt="">
+                
+            </div>
+            <p>
+      El Jardín Coffee Shop ubicado en el barrio Villa Paula en Itagüí, Antioquia, es una de esas cafeterías de barrio que te invitan a quedarte. Se especializa, por supuesto, en ofrecer un café de excelente sabor, pero su carta va más allá, incluyendo jugos, postres y opciones de desayuno. Es un lugar que se ha ganado una buena fama por la frescura de sus productos y por ser un punto de encuentro agradable para compartir un rato a cualquier hora del día.
+
+Este establecimiento tiene un ambiente que muchos describen como tranquilo y especial, ideal tanto para ir con amigos como con la familia. Ofrece la comodidad de poder sentarse a disfrutar con calma, pero también cuenta con opciones para llevar y de recogida en la acera, adaptándose a las necesidades de cada quien. Es, en resumen, un rincón acogedor en el sur de la ciudad que se enfoca en dar una experiencia única a través de la calidad y el buen trato.
+
+Si andas por el sur del Valle de Aburrá y te preguntas «dónde encuentro una buena cafetería cerca de mi», este local en Itagüí es una de las opciones que más recomiendan los que viven por la zona. Para quienes buscan un sitio con un café de sabor espectacular y un ambiente relajado en Villa Paula, El Jardín Coffee Shop se presenta como una alternativa que vale la pena conocer, especialmente si valoras la atención amable y los productos frescos.
+            </p>
+            <ul>
+                <li>✅ Característica principal 1: Eficiencia inigualable.</li>
+                <li>⚙️ Característica principal 2: Durabilidad extrema.</li>
+                <li>🌟 Característica principal 3: Fácil de usar e intuitivo.</li>
+            </ul>
+        </section>
+
+        <section class="cta-section">
+            <h3>¡sitio web!</h3>
+
+            <a href="https://directoriomedellin.com.co/itagui/cafeteria/el-jardin-coffee-shop/" class="cta-button">Ir al sitio web</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nombre de la Marca. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+</html>

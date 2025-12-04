@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <title>Mi plan Itagüí</title>
@@ -14,7 +15,7 @@
     .dropdown-menu.custom-yellow {
       background-color: #FFB107;
     }
-    
+
     /* Botones principales */
     .btn {
       font-size: 20px;
@@ -82,7 +83,7 @@
       box-shadow: 4px 7px 0px rgba(0, 91, 187, 0.4);
     }
 
-    .row.justify-content-center > .col-md-3 {
+    .row.justify-content-center>.col-md-3 {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -103,7 +104,8 @@
 
     .carousel-full .carousel-inner .carousel-item img {
       width: 100vw;
-      height: 75vh; /* altura responsive relativa a viewport */
+      height: 75vh;
+      /* altura responsive relativa a viewport */
       object-fit: cover;
       object-position: center;
       display: block;
@@ -118,6 +120,7 @@
       .boton-imagen img {
         height: 240px;
       }
+
       .carousel-full .carousel-inner .carousel-item img {
         height: 55vh;
       }
@@ -127,6 +130,7 @@
       .boton-imagen img {
         height: 200px;
       }
+
       .carousel-full .carousel-inner .carousel-item img {
         height: 45vh;
       }
@@ -149,7 +153,6 @@
     .dropdown-item {
       color: #ffffff;
     }
-    
   </style>
 </head>
 
@@ -201,29 +204,47 @@
 
   <!-- CARRUSEL — full width (sin container) -->
   <section class="carousel-full">
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000">
-          <img src="Panoramica_Itagüí.jpg" class="d-block" alt="Panorámica Itagüí">
+        <div class="carousel-item active">
+          <img src="Panoramica_Itagüí.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Itagui magico</h5>
+            <p>Itagüí entre los mejores del pais en desempeño de la gestion publica.</p>
+          </div>
         </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="A3TKBFPUERF33A44G3UKCTLUOA.avif" class="d-block" alt="Imagen 2">
+        <div class="carousel-item">
+          <img src="WWXO6XMHZNBZ3LCFLNAJLQHJBY.avif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Goleador itaguiseño</h5>
+            <p>luis suarez y su superiodidad con 4 goles ante la vinotinto</p>
+          </div>
         </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="entrecote.jpg" class="d-block" alt="Imagen 3">
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="BANNERS-MUNICIPIOS-ITAGUI.jpg" class="d-block" alt="Imagen 4">
+        <div class="carousel-item">
+          <img src="evento 1.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block" style="color: #FFB107;">
+            <h5>Nuevos conci ertos en Itagui</h5>
+            <p>Itagüí celebra la semana de la juventud con conciertos en ditaires.</p>
+          </div>
         </div>
       </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
+        <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
+        <span class="visually-hidden">Next</span>
       </button>
     </div>
   </section>
@@ -232,41 +253,45 @@
   <div class="container text-center botonera">
     <div class="row align-items-center">
       <div class="col">
-        <button type="button" class="btn btn-primary btn-lg" onclick="location.href='https://itagui.gov.co/sitio/noticias'">Noticias Itagüí</button>
+        <button type="button" class="btn btn-primary btn-lg"
+          onclick="location.href='https://itagui.gov.co/sitio/noticias'">Noticias Itagüí</button>
       </div>
 
       <div class="col">
         <div class="dropdown">
-          <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Deportes
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Individuales</a></li>
-            <li><a class="dropdown-item" href="#">En equipo</a></li>
-            <li><a class="dropdown-item" href="#">De contacto</a></li>
-            <li><a class="dropdown-item" href="#">Discapacitados</a></li>
+            <li><a class="dropdown-item" href="D individuales.html">Individuales</a></li>
+            <li><a class="dropdown-item" href="Competencias.html">En equipo</a></li>
+            <li><a class="dropdown-item" href="D de contacto.html">De contacto</a></li>
+            <li><a class="dropdown-item" href="D de discapacitados.html">Discapacitados</a></li>
           </ul>
         </div>
       </div>
 
       <div class="col">
         <div class="dropdown">
-          <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Festividades
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Conciertos</a></li>
-            <li><a class="dropdown-item" href="#">Carnavales</a></li>
-            <li><a class="dropdown-item" href="#">Ferias</a></li>
-            <li><a class="dropdown-item" href="#">Semana del artista</a></li>
-            <li><a class="dropdown-item" href="#">Festival de música</a></li>
+            <li><a class="dropdown-item" href="Eventos.html">Conciertos</a></li>
+            <li><a class="dropdown-item" href="carnavales.html">Carnavales</a></li>
+            <li><a class="dropdown-item" href="ferias.html">Ferias</a></li>
+            <li><a class="dropdown-item" href="semana del artista.html">Semana del artista</a></li>
+            <li><a class="dropdown-item" href="feria de musica.html">Festival de música</a></li>
           </ul>
         </div>
       </div>
 
       <div class="col">
         <div class="dropdown">
-          <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Gastronomía
           </button>
           <ul class="dropdown-menu">
@@ -279,7 +304,8 @@
       </div>
 
       <div class="col">
-        <a type="button" class="btn btn-primary btn-lg" href="https://itagui.gov.co/anuarioitagui/historia.html">Sobre Itagüí</a>
+        <a type="button" class="btn btn-primary btn-lg" href="https://itagui.gov.co/anuarioitagui/historia.html">Sobre
+          Itagüí</a>
 
       </div>
     </div>
@@ -291,7 +317,8 @@
 
       <div class="col-md-3 col-sm-6 mb-4">
         <button class="boton-imagen" onclick="location.href='eventos.html'">
-          <img src="Gratis-y-sin-reclamar-boleta-Asi-puede-asistir-a-los-conciertos-de-las-fiestas-de-Itagui-2.jpeg" alt="Eventos recientes">
+          <img src="Gratis-y-sin-reclamar-boleta-Asi-puede-asistir-a-los-conciertos-de-las-fiestas-de-Itagui-2.jpeg"
+            alt="Eventos recientes">
         </button>
         <button class="boton-texto" onclick="location.href='eventos.html'">Eventos recientes</button>
       </div>
@@ -309,42 +336,55 @@
         </button>
         <button class="boton-texto" onclick="location.href='postres y dulces.html'">Comida</button>
       </div>
-      <div>
-        <footer style="background-color: #ff7a00; color: #1b1b1b; padding: 24px; font-family: sans-serif;">
-  <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
-    <div style="flex: 0 0 auto;">
-      <img src="escudo-itagui.png" alt="Escudo de Itagüí" style="width: 100px; height: auto; border-radius: 8px; background: #fff; padding: 8px;" />
-    </div>
-    <div style="flex: 1 1 auto; min-width: 260px;">
-      <h2 style="margin: 0 0 8px 0;">Alcaldía de Itagüí</h2>
-      <p style="margin: 4px 0;"><strong>Sede Principal</strong></p>
-      <p style="margin: 4px 0;">📍 Dirección: CAMI Carrera 51 #51-55, Itagüí, Antioquia - Colombia</p>
-      <p style="margin: 4px 0;">🕒 Horario de atención:<br>
-        Lunes a jueves: 7:00 a.m. - 12:20 p.m. y 1:30 p.m. - 4:30 p.m.<br>
-        Viernes: 7:00 a.m. - 12:20 p.m. y 1:30 p.m. - 3:30 p.m.
-      </p>
-      <p style="margin: 4px 0;">📞 Teléfono: <a href="tel:+576043737676" style="color: #0b5ed7;">(+57) 604 373 7676</a></p>
-      <p style="margin: 4px 0;">📧 Correo: <a href="mailto:contactenos@itagui.gov.co" style="color: #0b5ed7;">contactenos@itagui.gov.co</a></p>
-    </div>
-    <div style="flex: 0 0 auto; display: flex; gap: 12px; margin-top: 12px;">
-      <a href="#" title="Facebook" style="text-decoration: none; background: #fff; color: #1b1b1b; padding: 10px; border-radius: 8px;">f</a>
-      <a href="#" title="YouTube" style="text-decoration: none; background: #fff; color: #1b1b1b; padding: 10px; border-radius: 8px;">▶</a>
-      <a href="#" title="Instagram" style="text-decoration: none; background: #fff; color: #1b1b1b; padding: 10px; border-radius: 8px;">◎</a>
-      <a href="#" title="Otra red" style="text-decoration: none; background: #fff; color: #1b1b1b; padding: 10px; border-radius: 8px;">★</a>
-    </div>
-  </div>
-</footer>
-
-
-
-      </div>
 
     </div>
   </div>
+  <div class="col-12 mx-auto">
+    <div class="row justify-content-center">
+      <footer style="background-color: #FFB107; color: #1b1b1b; padding: 24px; font-family: sans-serif;" class="text-center">
+        <div class="col-6 mx-auto" style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+          <div style="flex: 0 0 auto;">
+            <img src="logo alcaldia.png" alt=""
+              style="width: 100px; height: auto; border-radius: 8px; background: #fff; padding: 8px;" />
+          </div>
+          <div class="text-center" style="flex: 1 1 auto; min-width: 260px;">
+            <h2 style="margin: 0 0 8px 0;">Alcaldía de Itagüí</h2>
+            <p style="margin: 4px 0;"><strong>Sede Principal</strong></p>
+            <p style="margin: 4px 0;">📍 Dirección: CAMI Carrera 51 #51-55, Itagüí, Antioquia - Colombia</p>
+            <p style="margin: 4px 0;">🕒 Horario de atención:<br>
+              Lunes a jueves: 7:00 a.m. - 12:20 p.m. y 1:30 p.m. - 4:30 p.m.<br>
+              Viernes: 7:00 a.m. - 12:20 p.m. y 1:30 p.m. - 3:30 p.m.
+            </p>
+            <p style="margin: 4px 0;">📞 Teléfono: <a href="tel:+576043737676" style="color: #0b5ed7;">(+57) 604 373
+                7676</a></p>
+            <p style="margin: 4px 0;">📧 Correo: <a href="mailto:contactenos@itagui.gov.co"
+                style="color: #0b5ed7;">contactenos@itagui.gov.co</a></p>
+          </div>
+          <div style="flex: 0 0 auto; display: flex; gap: 12px; margin-top: 12px;">
+            <a href="facebook.png" title="Facebook"
+              style="text-decoration: none; background: #fff; color: #1b1b1b; padding: 10px; border-radius: 8px;"><img
+                src="youtube_1384012.png" width="30px" height="30px"></a>
+            <a href="#" title="YouTube"
+              style="text-decoration: none; background: #fff; color: #1b1b1b; padding: 10px; border-radius: 8px;"><img
+                src="facebook.png" width="30px" height="30px"></a>
+            <a href="#" title="Instagram"
+              style="text-decoration: none; background: #fff; color: #1b1b1b; padding: 10px; border-radius: 8px;"><img
+                src="instagram.png" width="30px" height="30px"></a>
+            <a href=" title=" Otra red"
+              style="text-decoration: none; background: #fff; color: #1b1b1b; padding: 10px; border-radius: 8px;"><img
+                src="x.png" width="30px" height="30px"></a>
+          </div>
+        </div>
+      </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
